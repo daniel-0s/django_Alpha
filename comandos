@@ -1,1 +1,4 @@
 docker-compose run app sh -c "django-admin.py startproject app  ."
+
+# psicionbado en el directorio del dockerfile 
+docker-compose up 

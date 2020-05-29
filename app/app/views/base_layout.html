@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {% block title %} {% endblock %}
+        </title>
+
+    </head>
+
+
+    <body>
+        <h1 style="background-color: orange;  color: white; text-align: center;"> Tutorial Pildoras Informticas</h1>        
+
+        {% include "segundaPlantilla.html" %}
+        
+        {% block content %}
+
+        {% endblock %}
+
+        <p>Pieeee . . . .</p>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    {% include "segundaPlantilla.html" %}
+
+    <h1>Ejemplo de Plantillas Django {{momento_actual}}</h1>
+    <p>El nombre de la persona es: {{persona.nombre}}</p>
+    <p>El apellido es: {{persona.apellido}}</p>
+    {% if temas  %}
+    <ul>
+        {% for elTema in temas %}
+        <li>  {{elTema}} </li>
+        {% endfor%}
+        <p>numero de temas </p>
+    </ul>    
+    {% else %}
+        <p> lista sin temas</p>
+    {% endif %}
+
+</body>
+</html>
